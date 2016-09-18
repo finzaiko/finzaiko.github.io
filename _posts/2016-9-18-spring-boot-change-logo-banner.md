@@ -13,7 +13,6 @@ Create `banner.txt` file and place into folder `project-name\src\main\resources`
 Startup will boot like so
 ```
 Your logo here..
-
 ```
 
 Resources :
