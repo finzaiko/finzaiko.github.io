@@ -12,17 +12,7 @@ Create `banner.txt` file and place into folder `project-name\src\main\resources`
 ### Run the boooot
 Startup will boot like so
 ```
-------------------------------------------------------------------------
-Building spring-boot-one 0.0.1-SNAPSHOT
-------------------------------------------------------------------------
-
---- exec-maven-plugin:1.2.1:exec (default-cli) @ spring-boot-one ---
-    _______                   _ __     __  
-   / ____(_)___  ____  ____ _(_) /_____\ \ 
-  / /_  / / __ \/_  / / __ `/ / //_/ __ \ \
- / __/ / / / / / / /_/ /_/ / / ,< / /_/ / /
-/_/   /_/_/ /_/ /___/\__,_/_/_/|_|\____/_/ 
--------------------------- ~ Next Coder ~
+Your logo here..
 
 ```
 
