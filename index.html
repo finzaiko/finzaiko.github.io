@@ -1,18 +1,21 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<section class="hero">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <div class="hero-inner container">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    <img src="{{ site.author.thumb | prepend: site.baseurl }}" alt="author thumb" class="dot">
+    <h1>Hello!..</h1>
+    <h3>I'm <strong itemprop="name">{{ site.author.name }}</strong>, a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3>
+    <h3>{{ site.author.bio }}</h3>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    <a href="{{ '/about' | prepend: site.baseurl }}" class="btn btn-ghost">about</a>
+    <a href="{{ '/blog' | prepend: site.baseurl }}" class="btn btn-ghost">blog</a>
+
+    {% include social.html %}
+
+  </div>
+
+</section>

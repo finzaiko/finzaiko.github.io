@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-FINZAIKO. Hello My name is Arifin, Finzaiko it's just a name, - and I'm a web developer and technical networking from Batam Indonesia, I can design and code for make it simple easier
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
-#### Contact me
-[finzaiko@gmail.com](mailto:finzaiko@gmail.com)
+You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+
+You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
