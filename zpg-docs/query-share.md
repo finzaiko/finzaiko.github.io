@@ -1,3 +1,0 @@
-# Query Share
-
->On progress..
