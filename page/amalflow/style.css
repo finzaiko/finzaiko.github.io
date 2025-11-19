@@ -248,7 +248,7 @@ body {
 }
 
 /* Footer */
-.footer {
+.footer , .footer > div{
     background-color: var(--dark-text);
     color: rgba(255, 255, 255, 0.7);
     padding: 2rem 0;
@@ -258,6 +258,30 @@ body {
 
 .footer p {
     font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
 }
 
 /* Responsive Design */
