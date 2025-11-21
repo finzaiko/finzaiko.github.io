@@ -87,5 +87,22 @@
             </div>
         </div>
     </footer>
+    <script>
+    (function() {
+        try {
+            // Do not redirect if already on Indonesian page
+            if (location.pathname.endsWith('/id.html') || location.pathname.endsWith('id.html')) return;
+            // Respect a stored manual preference (if you add a language switch later)
+            if (localStorage.getItem('langPref')) return;
+            var lang = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+            if (/^id(\-|$)/i.test(lang)) {
+                // Use replace so back button doesn't go to English then immediately redirect again
+                location.replace('id.html');
+            }
+        } catch (e) {
+            // Silently ignore any errors
+        }
+    })();
+    </script>
 </body>
 </html>
