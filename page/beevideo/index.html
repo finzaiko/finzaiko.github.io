@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeeVideo - Simple Video Player</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo.png" alt="BeeVideo Logo" class="logo-img">
+                <span class="logo-text">BeeVideo</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#download" class="nav-link">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Stream Videos with Simplicity</h1>
+                <p>BeeVideo is your lightweight and elegant video player app. Enjoy smooth playback and intuitive controls on your mobile device.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.finzaiko.beevideo" class="btn btn-primary" target="_blank">Get on Google Play</a>
+            </div>
+            <div class="hero-image">
+                <img src="screenshot1.png" alt="BeeVideo App Screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">▶️</div>
+                    <h3>Smooth Playback</h3>
+                    <p>Experience seamless video playback with adaptive streaming quality. Watch your favorite videos without interruptions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎥</div>
+                    <h3>Multiple Formats Support</h3>
+                    <p>Play various video formats including MP4, MKV, WebM, and more. Compatibility with almost all video codecs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Intuitive Controls</h3>
+                    <p>Simple and user-friendly interface with gesture controls. Adjust brightness, volume, and playback speed with ease.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2>Ready to Stream Your Videos?</h2>
+            <p>Download BeeVideo today and experience the simplest way to watch videos on your mobile device.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.finzaiko.beevideo&hl=en" class="btn btn-secondary" target="_blank">Download Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 BeeVideo</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms and Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+    (function() {
+        try {
+            // Do not redirect if already on Indonesian page
+            if (location.pathname.endsWith('/id.html') || location.pathname.endsWith('id.html')) return;
+            // Respect a stored manual preference (if you add a language switch later)
+            if (localStorage.getItem('langPref')) return;
+            var lang = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+            if (/^id(\-|$)/i.test(lang)) {
+                // Use replace so back button doesn't go to English then immediately redirect again
+                location.replace('id.html');
+            }
+        } catch (e) {
+            // Silently ignore any errors
+        }
+    })();
+    </script>
+</body>
+</html>
